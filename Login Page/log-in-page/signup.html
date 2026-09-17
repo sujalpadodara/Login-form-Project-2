@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account</title>
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+
+    <div class="signup-container">
+
+        <form class="signup-box glass-box" id="signupform">
+
+            <!-- Heading -->
+            <h2>Create Account</h2>
+
+            <p class="signup-subtitle">
+                Create your account to get started
+            </p>
+
+
+            <!-- First Name + Last Name -->
+            <div class="name-row">
+
+                <div class="signup-input-box">
+                    <input
+                        type="text"
+                        placeholder="First Name"
+                        autocomplete="given-name">
+                </div>
+
+                <div class="signup-input-box">
+                    <input
+                        type="text"
+                        placeholder="Last Name"
+                        autocomplete="family-name">
+                </div>
+
+            </div>
+
+
+            <!-- Email -->
+            <div class="signup-input-box">
+
+                <input
+                    type="email"
+                    placeholder="Email"
+                    autocomplete="email">
+
+            </div>
+
+
+            <!-- Password -->
+            <div class="signup-input-box">
+
+                <input
+                    type="password"
+                    id="signup-password"
+                    placeholder="Enter your password"
+                    autocomplete="new-password">
+
+                <i
+                    class="fa-regular fa-eye signup-password-icon">
+                </i>
+
+            </div>
+
+
+            <!-- Terms -->
+            <div class="terms">
+
+                <label>
+
+                    <input type="checkbox">
+
+                    <span>
+                        I agree to the
+                        <a href="#">Terms & Conditions</a>
+                    </span>
+
+                </label>
+
+            </div>
+
+
+            <!-- Create Account Button -->
+            <button class="create-btn" type="submit">
+                Create Account
+            </button>
+
+
+            <!-- Login Link -->
+            <p class="login-link">
+
+                Already have an account?
+
+                <a href="index.html">
+                    Login
+                </a>
+
+            </p>
+
+
+            <!-- Divider -->
+            <div class="divider">
+
+                <span></span>
+
+                <p>Or continue with</p>
+
+                <span></span>
+
+            </div>
+
+
+            <!-- Social Buttons -->
+            <div class="social-buttons">
+
+                <button class="social-btn" type="button" id="appleBtn">
+    <i class="fa-brands fa-apple"></i>
+    Apple
+</button>
+
+
+                <button class="social-btn">
+
+                    <i class="fa-brands fa-apple"></i>
+
+                    Apple
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

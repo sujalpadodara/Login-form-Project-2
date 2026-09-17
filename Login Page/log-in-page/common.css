@@ -1,0 +1,81 @@
+/* ========================================
+   RESET
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ========================================
+   BODY
+======================================== */
+
+body {
+    min-height: 100vh;
+
+    font-family: Arial, sans-serif;
+
+    background-image: url("../assets/Background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+
+    overflow-x: hidden;
+}
+
+
+/* ========================================
+   DARK OVERLAY
+======================================== */
+
+body::before {
+    content: "";
+
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.25);
+
+    z-index: 0;
+}
+
+
+/* ========================================
+   GLASS EFFECT
+======================================== */
+
+.glass-box {
+    background: rgba(255, 255, 255, 0.16);
+
+    border: 1px solid rgba(255, 255, 255, 0.45);
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+
+    color: white;
+}
+
+
+/* ========================================
+   FONT AWESOME ICONS
+======================================== */
+
+.input-icon {
+    position: absolute;
+
+    right: 15px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    font-size: 14px;
+
+    color: rgba(255, 255, 255, 0.8);
+}
