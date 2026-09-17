@@ -5,5 +5,8 @@
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
   }
 }
