@@ -21,7 +21,7 @@
 
     <div class="signup-container">
 
-        <form class="signup-box glass-box" id="signupform">
+        <form class="signup-box glass-box" id="signupForm">
 
             <!-- Heading -->
             <h2>Create Account</h2>
@@ -35,17 +35,25 @@
             <div class="name-row">
 
                 <div class="signup-input-box">
+
                     <input
                         type="text"
+                        id="firstName"
                         placeholder="First Name"
-                        autocomplete="given-name">
+                        autocomplete="given-name"
+                        required>
+
                 </div>
 
                 <div class="signup-input-box">
+
                     <input
                         type="text"
+                        id="lastName"
                         placeholder="Last Name"
-                        autocomplete="family-name">
+                        autocomplete="family-name"
+                        required>
+
                 </div>
 
             </div>
@@ -56,8 +64,10 @@
 
                 <input
                     type="email"
+                    id="signup-email"
                     placeholder="Email"
-                    autocomplete="email">
+                    autocomplete="email"
+                    required>
 
             </div>
 
@@ -69,7 +79,8 @@
                     type="password"
                     id="signup-password"
                     placeholder="Enter your password"
-                    autocomplete="new-password">
+                    autocomplete="new-password"
+                    required>
 
                 <i
                     class="fa-regular fa-eye signup-password-icon">
@@ -83,7 +94,10 @@
 
                 <label>
 
-                    <input type="checkbox">
+                    <input
+                        type="checkbox"
+                        id="terms"
+                        required>
 
                     <span>
                         I agree to the
@@ -96,9 +110,17 @@
 
 
             <!-- Create Account Button -->
-            <button class="create-btn" type="submit">
+            <button
+                class="create-btn"
+                type="submit">
+
                 Create Account
+
             </button>
+
+
+            <!-- Signup Message -->
+            <p id="signupMessage"></p>
 
 
             <!-- Login Link -->
@@ -128,17 +150,23 @@
             <!-- Social Buttons -->
             <div class="social-buttons">
 
-                <button class="social-btn" type="button" id="appleBtn">
-    <i class="fa-brands fa-apple"></i>
-    Apple
-</button>
-
-
-                <button class="social-btn">
+                <button
+                    class="social-btn"
+                    type="button"
+                    id="appleBtn">
 
                     <i class="fa-brands fa-apple"></i>
-
                     Apple
+
+                </button>
+
+                <button
+                    class="social-btn"
+                    type="button"
+                    id="googleBtn">
+
+                    <i class="fa-brands fa-google"></i>
+                    Google
 
                 </button>
 

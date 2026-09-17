@@ -13,7 +13,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <!-- CSS -->
-     <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -31,13 +31,15 @@
             </p>
 
 
-            <!-- Username -->
+            <!-- Email -->
             <div class="input-box">
 
                 <input
-                    type="text"
-                    placeholder="Username"
-                    autocomplete="username">
+                    type="email"
+                    id="email"
+                    placeholder="Email"
+                    autocomplete="username"
+                    required>
 
                 <i class="fa-regular fa-user"></i>
 
@@ -51,7 +53,8 @@
                     type="password"
                     id="password"
                     placeholder="Password"
-                    autocomplete="current-password">
+                    autocomplete="current-password"
+                    required>
 
                 <i class="fa-regular fa-eye password-icon"></i>
 
@@ -62,7 +65,7 @@
             <div class="login-options">
 
                 <label>
-                    <input type="checkbox">
+                    <input type="checkbox" id="rememberMe">
                     <span>Remember me</span>
                 </label>
 
@@ -72,15 +75,27 @@
 
 
             <!-- Login Button -->
-            <button class="login-btn" type="button">
+            <button
+                class="login-btn"
+                id="loginBtn"
+                type="button">
                 Login
             </button>
 
 
+            <!-- Login Message -->
+            <p id="loginMessage"></p>
+
+
             <!-- Signup -->
             <p class="signup-text">
+
                 Don't have an account?
-                <a href="signup.html">Sign Up</a>
+
+                <a href="signup.html">
+                    Sign Up
+                </a>
+
             </p>
 
         </div>
